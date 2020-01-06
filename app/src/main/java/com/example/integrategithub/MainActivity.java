@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                printStar2();
+
 
             }
         });
@@ -55,14 +55,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void printStar2(){
-        stnBuilder=new StringBuilder();
-        for (int i=12;i>0;i--){
-            for (int j=0;j<i;j++){
-                stnBuilder.append("*");
-            }
-            stnBuilder.append("\n");
-        }
-        text1.setText(stnBuilder);
-    }
+
 }

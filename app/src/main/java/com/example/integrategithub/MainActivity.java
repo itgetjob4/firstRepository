@@ -3,6 +3,7 @@ package com.example.integrategithub;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView text1;
     Button button1,button2,button3,button4;
+    StringBuilder stnBuilder,stnBuilder2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+              printStar1();
             }
         });
 
@@ -52,5 +54,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void printStar1(){
+        stnBuilder=new StringBuilder();
+        for (int i=0;i<12;i++){
+            for (int j=0;j<i;j++){
+                stnBuilder.append("*");
+            }
+            stnBuilder.append("\n");
+        }
+
+        text1.setText(stnBuilder);
     }
 }

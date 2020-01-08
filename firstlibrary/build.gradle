@@ -11,6 +11,18 @@ ext{
      publishedGroupId="com.intellisense.udit"
      artifact ="udit"
      libraryVersion="1.0.0"
+
+    libraryDescription ="This is my description"
+    siteUrl="https://github.com/itgetjob4"
+    gitUrl="https://github.com/itgetjob4/firstRepository.git"
+    developerId="itgetjob4"
+    developerName="intelli sense"
+    developerEmail="itgetjobs4@gmail.com"
+    licenseName="The Apache software License, Version 2.0"
+    licenseUrl="http://www.apache.org/licenses/LICENSE-2.0.txt"
+    allLicenses=["Apache-2.0"]
+
+
 }
 
 

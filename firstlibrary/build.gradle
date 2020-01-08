@@ -1,4 +1,18 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+
+ext{
+     bintrayRepo="firstReposit"
+     bintrayName="com.example.firstlibrary"
+     libraryName="firstlibrary"
+
+     publishedGroupId="com.intellisense.udit"
+     artifact ="udit"
+     libraryVersion="1.0.0"
+}
+
 
 android {
     compileSdkVersion 29
@@ -32,3 +46,8 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+//if (project.rootProject.file('local.properties').exists()){
+//    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//}
